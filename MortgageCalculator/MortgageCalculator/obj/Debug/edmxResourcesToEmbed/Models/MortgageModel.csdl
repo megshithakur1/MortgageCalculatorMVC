@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MortgageDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Mortgage1">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Principle" Type="String" Unicode="true" FixedLength="false" MaxLength="50" />
+    <Property Name="Rate" Type="String" Unicode="true" FixedLength="false" MaxLength="50" />
+    <Property Name="Years" Type="String" Unicode="true" FixedLength="false" MaxLength="50" />
+    <Property Name="MonthlyPayment" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="MortgageDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Mortgage1" EntityType="Self.Mortgage1" />
+  </EntityContainer>
+</Schema>

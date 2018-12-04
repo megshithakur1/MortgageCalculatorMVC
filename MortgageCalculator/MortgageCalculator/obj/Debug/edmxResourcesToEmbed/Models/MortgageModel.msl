@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MortgageDBModelStoreContainer" CdmEntityContainer="MortgageDBEntities">
+    <EntitySetMapping Name="Mortgage1">
+      <EntityTypeMapping TypeName="MortgageDBModel.Mortgage1">
+        <MappingFragment StoreEntitySet="Mortgage1">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Principle" ColumnName="Principle" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Years" ColumnName="Years" />
+          <ScalarProperty Name="MonthlyPayment" ColumnName="MonthlyPayment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
